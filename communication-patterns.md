@@ -2,6 +2,11 @@
 
 *What makes collaboration flow - learned through practice.*
 
+[![SpiralSafe](https://img.shields.io/badge/🌀_SpiralSafe-Ecosystem-purple?style=flat-square)](https://github.com/toolate28/SpiralSafe)
+[![Wave Toolkit](https://img.shields.io/badge/🌊_Wave_Toolkit-Main-0066FF?style=flat-square)](README.md)
+
+> **Part of the [SpiralSafe Ecosystem](https://github.com/toolate28/SpiralSafe)**
+
 ---
 
 ## The Patterns
