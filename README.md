@@ -26,6 +26,7 @@ Wave Toolkit provides coherence detection tools and AI collaboration patterns fo
 
 - **[T(ai)LS USB](docs/TAILS-USB.md)** — Privacy-first portable AI concept
 - **[Wave Office](docs/WAVE-OFFICE.md)** — Dual agent collaboration (Claude + Ollama)
+- **[Ecosystem Migration Guide](docs/ECOSYSTEM-MIGRATION-GUIDE.md)** — Agent-facing guide for repo transitions
 
 ---
 
