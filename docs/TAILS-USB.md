@@ -4,7 +4,7 @@
 
 [![SpiralSafe](https://img.shields.io/badge/🌀_SpiralSafe-Ecosystem-purple?style=flat-square)](https://github.com/toolate28/SpiralSafe)
 [![Wave Toolkit](https://img.shields.io/badge/🌊_Wave_Toolkit-Main-0066FF?style=flat-square)](../README.md)
-[![Status](https://img.shields.io/badge/Status-Concept-yellow?style=flat-square)](docs/TAILS-USB.md)
+[![Status](https://img.shields.io/badge/Status-Concept-yellow?style=flat-square)](#)
 
 > **Part of the [SpiralSafe Ecosystem](https://github.com/toolate28/SpiralSafe)**
 
