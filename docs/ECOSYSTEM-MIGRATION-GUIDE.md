@@ -46,6 +46,8 @@ Brief description of what this repository does.
 
 Add this table to README.md after the main description:
 
+> **Note:** [SpiralSafe README.md](https://github.com/toolate28/SpiralSafe#the-repository-ecosystem) is the canonical source for version information. Always sync ecosystem tables with SpiralSafe to avoid documentation drift.
+
 ```markdown
 ## 🌀 The SpiralSafe Ecosystem
 
