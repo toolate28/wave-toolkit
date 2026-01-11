@@ -2,6 +2,12 @@
 
 *Welcome to our Office. Claude and Ollama, side by side.*
 
+[![SpiralSafe](https://img.shields.io/badge/🌀_SpiralSafe-Ecosystem-purple?style=flat-square)](https://github.com/toolate28/SpiralSafe)
+[![Wave Toolkit](https://img.shields.io/badge/🌊_Wave_Toolkit-Main-0066FF?style=flat-square)](../README.md)
+[![HOPE NPCs](https://img.shields.io/badge/🎮_HOPE_NPCs-Minecraft_AI-blue?style=flat-square)](https://github.com/toolate28/ClaudeNPC-Server-Suite)
+
+> **Part of the [SpiralSafe Ecosystem](https://github.com/toolate28/SpiralSafe)**
+
 ---
 
 ## The Setup

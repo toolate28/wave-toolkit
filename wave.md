@@ -2,6 +2,12 @@
 
 *From one builder to another - philosophy, mechanics, and everything between.*
 
+[![SpiralSafe](https://img.shields.io/badge/🌀_SpiralSafe-Ecosystem-purple?style=flat-square)](https://github.com/toolate28/SpiralSafe)
+[![HOPE NPCs](https://img.shields.io/badge/🎮_HOPE_NPCs-Minecraft_AI-blue?style=flat-square)](https://github.com/toolate28/ClaudeNPC-Server-Suite)
+[![Status](https://img.shields.io/badge/Status-Hope%26%26Sauced-FF6600?style=flat-square)](https://github.com/toolate28/SpiralSafe/blob/main/CONTRIBUTING.md)
+
+> **Part of the [SpiralSafe Ecosystem](https://github.com/toolate28/SpiralSafe)**
+
 ---
 
 ## Part I: The Philosophy
