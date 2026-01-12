@@ -28,6 +28,10 @@ Wave Toolkit provides coherence detection tools and AI collaboration patterns fo
 - **[Wave Office](docs/WAVE-OFFICE.md)** — Dual agent collaboration (Claude + Ollama)
 - **[Ecosystem Migration Guide](docs/ECOSYSTEM-MIGRATION-GUIDE.md)** — Agent-facing guide for repo transitions
 
+### 📓 Interactive Tools
+
+- **[Project Book](project-book.ipynb)** — Interactive Jupyter notebook for framework tooling and ecosystem integration
+
 ---
 
 ## 🌀 The SpiralSafe Ecosystem
@@ -54,6 +58,7 @@ Wave Toolkit is part of a unified framework for human-AI collaboration:
 | **Setup Script** | `Setup-Wave.ps1` | One-time bootstrap |
 | **Consolidation** | `Consolidate-Scripts.ps1` | Migrates loose scripts to organized structure |
 | **Logging Module** | `tools/Wave.Logging.psm1` | Centralized logging across the ecosystem |
+| **Project Book** | `project-book.ipynb` | Interactive Jupyter notebook for framework tooling |
 
 ---
 
@@ -65,6 +70,7 @@ wave-toolkit/
 ├── 📄 wave.md                    # The complete guide
 ├── 📄 communication-patterns.md  # Collaboration patterns
 ├── 📄 AI_AGENTS.md               # Agent coordination rules
+├── 📓 project-book.ipynb         # Interactive Jupyter notebook
 │
 ├── 📂 docs/                      # Documentation
 │   ├── TAILS-USB.md              # Privacy-first AI concept
