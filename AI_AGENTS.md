@@ -12,7 +12,7 @@
 
 ## The Golden Rule
 
-**NEVER drop scripts directly into `$HOME` (`C:\Users\iamto`).**
+**NEVER drop scripts directly into `$HOME` (`C:\Users\*).**
 
 All code must go into organized directories within `wave-toolkit/` or project-specific repos.
 
