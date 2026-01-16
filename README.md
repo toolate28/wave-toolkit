@@ -22,6 +22,12 @@ Wave Toolkit provides coherence detection tools and AI collaboration patterns fo
 - **[Communication Patterns](communication-patterns.md)** — What makes collaboration flow
 - **[AI Agent Rules](AI_AGENTS.md)** — Coordination rules for all AI agents
 
+### 🌀 Workflow Guides (New!)
+
+- **[Development Workflow](docs/guides/DEVELOPMENT_WORKFLOW.md)** — Develop → Prototype → Test → Refine cycle with trap detection
+- **[Orchard View](docs/guides/ORCHARD_VIEW.md)** — Multi-layer visualization (repos, branches, leaves, fireflies, atoms)
+- **[Emergent Isomorphism](docs/guides/EMERGENT_ISOMORPHISM.md)** — Structure that preserves 60%+ emergence
+
 ### 🔧 Special Docs
 
 - **[T(ai)LS USB](docs/TAILS-USB.md)** — Privacy-first portable AI concept
@@ -73,6 +79,10 @@ wave-toolkit/
 ├── 📓 project-book.ipynb         # Interactive Jupyter notebook
 │
 ├── 📂 docs/                      # Documentation
+│   ├── 📂 guides/                # Workflow guides (NEW)
+│   │   ├── DEVELOPMENT_WORKFLOW.md   # Develop→Prototype→Test→Refine
+│   │   ├── ORCHARD_VIEW.md           # Multi-layer visualization
+│   │   └── EMERGENT_ISOMORPHISM.md   # 60%+ emergence structure
 │   ├── TAILS-USB.md              # Privacy-first AI concept
 │   └── WAVE-OFFICE.md            # Dual agent collaboration
 │
@@ -80,6 +90,8 @@ wave-toolkit/
 │   └── Wave.Logging.psm1         # Logging across the ecosystem
 │
 ├── 📂 scripts/                   # Organized scripts
+│   ├── Check-CommonTraps.ps1     # Trap pattern detection (NEW)
+│   ├── Save-SessionCheckpoint.ps1 # Session boundary recovery (NEW)
 │   ├── gaming/                   # Gaming/performance scripts
 │   ├── system/                   # System optimization
 │   ├── deployment/               # Deploy/CI scripts
