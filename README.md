@@ -84,7 +84,7 @@ wave-toolkit/
 │   │   ├── DEVELOPMENT_WORKFLOW.md   # Develop→Prototype→Test→Refine
 │   │   ├── ORCHARD_VIEW.md           # Multi-layer visualization
 │   │   ├── EMERGENT_ISOMORPHISM.md   # 60%+ emergence structure
-│   │   └── PR_CORRELATION_ANALYSIS.md # Pattern analysis since spiralsafe-mono
+│   │   └── PR_CORRELATION_ANALYSIS.md # Pattern analysis
 │   ├── TAILS-USB.md              # Privacy-first AI concept
 │   └── WAVE-OFFICE.md            # Dual agent collaboration
 │
