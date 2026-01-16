@@ -27,6 +27,7 @@ Wave Toolkit provides coherence detection tools and AI collaboration patterns fo
 - **[Development Workflow](docs/guides/DEVELOPMENT_WORKFLOW.md)** — Develop → Prototype → Test → Refine cycle with trap detection
 - **[Orchard View](docs/guides/ORCHARD_VIEW.md)** — Multi-layer visualization (repos, branches, leaves, fireflies, atoms)
 - **[Emergent Isomorphism](docs/guides/EMERGENT_ISOMORPHISM.md)** — Structure that preserves 60%+ emergence
+- **[PR Correlation Analysis](docs/guides/PR_CORRELATION_ANALYSIS.md)** — Patterns, spirals, and constellations since spiralsafe-mono genesis
 
 ### 🔧 Special Docs
 
@@ -82,7 +83,8 @@ wave-toolkit/
 │   ├── 📂 guides/                # Workflow guides (NEW)
 │   │   ├── DEVELOPMENT_WORKFLOW.md   # Develop→Prototype→Test→Refine
 │   │   ├── ORCHARD_VIEW.md           # Multi-layer visualization
-│   │   └── EMERGENT_ISOMORPHISM.md   # 60%+ emergence structure
+│   │   ├── EMERGENT_ISOMORPHISM.md   # 60%+ emergence structure
+│   │   └── PR_CORRELATION_ANALYSIS.md # Pattern analysis since spiralsafe-mono
 │   ├── TAILS-USB.md              # Privacy-first AI concept
 │   └── WAVE-OFFICE.md            # Dual agent collaboration
 │
