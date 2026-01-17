@@ -303,9 +303,9 @@ try {
     $stagedDiff = git diff --cached 2>$null
     
     if ($stagedDiff) {
-        # Check for pow(2.71x, x) patterns (various approximations of e^x)
-        # Matches 2.71, 2.718, 2.7182, 2.71828, etc.
-        if ($stagedDiff -match "pow\s*\(\s*2\.71[0-9]*") {
+        # Check for pow(2.71x, ...) patterns (various approximations of e^x)
+        # Matches 2.71, 2.718, 2.7182, 2.71828, etc. with any following parameters
+        if ($stagedDiff -match "pow\s*\(\s*2\.71[0-9]*\s*,") {
             $warnings += @{
                 Level = "WARN"
                 Check = "CASCADE: Numerical Precision"
@@ -316,8 +316,8 @@ try {
         }
         
         # Check for Math.Pow with e approximation (PowerShell/C#)
-        # Matches various approximations: 2.71, 2.718, 2.7182, etc.
-        if ($stagedDiff -match "\[Math\]::Pow\s*\(\s*2\.71[0-9]*") {
+        # Matches various approximations: 2.71, 2.718, 2.7182, etc. with comma separator
+        if ($stagedDiff -match "\[Math\]::Pow\s*\(\s*2\.71[0-9]*\s*,") {
             $warnings += @{
                 Level = "WARN"
                 Check = "CASCADE: Numerical Precision"

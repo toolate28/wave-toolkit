@@ -157,29 +157,34 @@ def process_data(input_data):
 ```python
 import math
 
-def process_data(input_data):
+def process_data_flow(current_value, previous_value):
     """
-    Apply exponential decay to input data.
+    Apply exponential decay to data flow with divergence detection.
     
     Uses math.exp() for precise exponential calculation
     per Wave protocol numerical precision requirements.
     
     Args:
-        input_data: Numeric value to process. Must be non-negative.
+        current_value: Current data flow value
+        previous_value: Previous data flow value for gradient calculation
     
     Raises:
-        ValueError: If input_data is negative (negative divergence).
+        ValueError: If negative divergence detected (premature closure).
     """
-    # Validate input to detect divergence early
-    if input_data < 0:
+    # Calculate flow gradient to detect divergence
+    flow_gradient = current_value - previous_value
+    
+    # Detect negative divergence (flow decreasing when it should be stable/growing)
+    # This indicates premature closure or data flow breakdown
+    if flow_gradient < 0 and current_value > 0:
         raise ValueError(
-            f"Negative divergence detected: input_data={input_data}. "
-            "This indicates premature closure or invalid data flow."
+            f"Negative divergence detected: gradient={flow_gradient}. "
+            "Data flow is decreasing unexpectedly - possible premature closure."
         )
     
     # Precise exponential decay using math.exp()
-    decay_factor = math.exp(-0.5 * input_data)
-    result = input_data * decay_factor
+    decay_factor = math.exp(-0.5 * current_value)
+    result = current_value * decay_factor
     
     return result
 ```
@@ -235,8 +240,8 @@ Use these patterns to find code that needs CASCADE operations:
 grep -r "2\.71[0-9]*" . --include="*.py" --include="*.js" --include="*.cs"
 
 # Find pow() or Math.Pow() that should be exp()
-# Specifically targets e approximations in power functions
-grep -r "pow\s*\(\s*2\.71[0-9]*\|Math\.Pow\s*\(\s*2\.71[0-9]*" . 
+# Specifically targets e approximations in power functions with comma separator
+grep -rE "pow\s*\(\s*2\.71[0-9]*\s*,|Math\.Pow\s*\(\s*2\.71[0-9]*\s*," . 
 
 # Find unused imports (Python)
 pylint --disable=all --enable=unused-import .
