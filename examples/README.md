@@ -27,6 +27,10 @@ python3 examples/euler_number_usage.py
 **Related Tests:**
 - `tests/test_euler_number_usage.py`
 
+**Ecosystem Impact:**
+- See [`docs/EULER_PRECISION_IMPACT_ANALYSIS.md`](../docs/EULER_PRECISION_IMPACT_ANALYSIS.md) for analysis of where this precision issue could manifest across the SpiralSafe ecosystem
+- Use `tools/scan_euler_precision.py` to scan for hardcoded approximations in your repositories
+
 ---
 
 ## 🎯 Purpose
