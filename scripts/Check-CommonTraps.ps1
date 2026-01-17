@@ -294,6 +294,56 @@ try {
 }
 
 # ============================================================================
+# CHECK 9: CASCADE Opportunities
+# Pattern: Imprecise mathematical operations, missing divergence detection
+# ============================================================================
+Write-Verbose "Checking for CASCADE operation opportunities..."
+
+try {
+    $stagedDiff = git diff --cached 2>$null
+    
+    if ($stagedDiff) {
+        # Check for pow(2.718, x) patterns (approximation of e^x)
+        if ($stagedDiff -match "pow\s*\(\s*2\.718") {
+            $warnings += @{
+                Level = "WARN"
+                Check = "CASCADE: Numerical Precision"
+                Issue = "Found pow(2.718, x) - approximation of e^x"
+                Detail = "Consider using exact exponential: math.exp(x) or [Math]::Exp(x)"
+                Fix = "See docs/guides/CASCADE_OPERATIONS.md for refactoring guide"
+            }
+        }
+        
+        # Check for Math.Pow with e approximation (PowerShell/C#)
+        if ($stagedDiff -match "\[Math\]::Pow\s*\(\s*2\.718") {
+            $warnings += @{
+                Level = "WARN"
+                Check = "CASCADE: Numerical Precision"
+                Issue = "Found [Math]::Pow(2.718, x) - approximation of e^x"
+                Detail = "Use [Math]::Exp(x) for exact exponential calculation"
+                Fix = "Replace with: [Math]::Exp(x)"
+            }
+        }
+        
+        # Check for Python files to suggest import analysis
+        $pythonFiles = git diff --cached --name-only 2>$null | Where-Object { $_ -match "\.py$" }
+        if ($pythonFiles) {
+            $warnings += @{
+                Level = "INFO"
+                Check = "CASCADE: Code Hygiene"
+                Issue = "Python files modified"
+                Detail = "Consider checking for unused imports"
+                Fix = "Run: pylint --disable=all --enable=unused-import ."
+            }
+        }
+    }
+    
+    Write-Verbose "✓ CASCADE opportunities checked"
+} catch {
+    Write-Verbose "Could not check for CASCADE opportunities"
+}
+
+# ============================================================================
 # REPORT
 # ============================================================================
 
