@@ -163,18 +163,24 @@ def process_data(input_data):
     
     Uses math.exp() for precise exponential calculation
     per Wave protocol numerical precision requirements.
-    """
-    # Precise exponential decay using math.exp()
-    decay_factor = math.exp(-0.5 * input_data)
     
-    # Detect divergence (unexpected negative values)
-    if decay_factor < 0:
+    Args:
+        input_data: Numeric value to process. Must be non-negative.
+    
+    Raises:
+        ValueError: If input_data is negative (negative divergence).
+    """
+    # Validate input to detect divergence early
+    if input_data < 0:
         raise ValueError(
-            f"Negative divergence detected: decay_factor={decay_factor}. "
-            "This indicates premature closure in the data flow."
+            f"Negative divergence detected: input_data={input_data}. "
+            "This indicates premature closure or invalid data flow."
         )
     
+    # Precise exponential decay using math.exp()
+    decay_factor = math.exp(-0.5 * input_data)
     result = input_data * decay_factor
+    
     return result
 ```
 
@@ -224,16 +230,19 @@ Use these patterns to find code that needs CASCADE operations:
 ### Pattern Detection Commands
 
 ```bash
-# Find approximations of e
-grep -r "2\.718" . --include="*.py" --include="*.js" --include="*.cs"
+# Find approximations of e (2.71, 2.718, 2.7182, 2.71828, etc.)
+# Note: Matches the literal decimal approximations of Euler's number
+grep -r "2\.71[0-9]*" . --include="*.py" --include="*.js" --include="*.cs"
 
-# Find pow() that should be exp()
-grep -r "pow.*2\.7\|Math\.Pow.*2\.7" . 
+# Find pow() or Math.Pow() that should be exp()
+# Specifically targets e approximations in power functions
+grep -r "pow\s*\(\s*2\.71[0-9]*\|Math\.Pow\s*\(\s*2\.71[0-9]*" . 
 
 # Find unused imports (Python)
 pylint --disable=all --enable=unused-import .
 
-# Find missing divergence checks
+# Find potential divergence points (negative values not checked)
+# Exclude lines that already have divergence/premature checks
 grep -r "if.*< 0" . | grep -v "divergence\|premature"
 ```
 
