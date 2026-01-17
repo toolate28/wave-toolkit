@@ -303,23 +303,25 @@ try {
     $stagedDiff = git diff --cached 2>$null
     
     if ($stagedDiff) {
-        # Check for pow(2.718, x) patterns (approximation of e^x)
-        if ($stagedDiff -match "pow\s*\(\s*2\.718") {
+        # Check for pow(2.71x, x) patterns (various approximations of e^x)
+        # Matches 2.71, 2.718, 2.7182, 2.71828, etc.
+        if ($stagedDiff -match "pow\s*\(\s*2\.71[0-9]*") {
             $warnings += @{
                 Level = "WARN"
                 Check = "CASCADE: Numerical Precision"
-                Issue = "Found pow(2.718, x) - approximation of e^x"
+                Issue = "Found pow(2.71..., x) - approximation of e^x"
                 Detail = "Consider using exact exponential: math.exp(x) or [Math]::Exp(x)"
                 Fix = "See docs/guides/CASCADE_OPERATIONS.md for refactoring guide"
             }
         }
         
         # Check for Math.Pow with e approximation (PowerShell/C#)
-        if ($stagedDiff -match "\[Math\]::Pow\s*\(\s*2\.718") {
+        # Matches various approximations: 2.71, 2.718, 2.7182, etc.
+        if ($stagedDiff -match "\[Math\]::Pow\s*\(\s*2\.71[0-9]*") {
             $warnings += @{
                 Level = "WARN"
                 Check = "CASCADE: Numerical Precision"
-                Issue = "Found [Math]::Pow(2.718, x) - approximation of e^x"
+                Issue = "Found [Math]::Pow(2.71..., x) - approximation of e^x"
                 Detail = "Use [Math]::Exp(x) for exact exponential calculation"
                 Fix = "Replace with: [Math]::Exp(x)"
             }
