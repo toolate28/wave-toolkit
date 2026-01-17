@@ -1,0 +1,47 @@
+# Wave Toolkit Examples
+
+This directory contains example code and best practices for common programming patterns used in the SpiralSafe ecosystem.
+
+## 📚 Available Examples
+
+### euler_number_usage.py
+
+Demonstrates the correct way to use Euler's number (e) in Python, particularly for exponential calculations common in algorithms like simulated annealing, probability calculations, and exponential decay.
+
+**Key Points:**
+- ✓ Use `math.exp(x)` for computing e^x (recommended)
+- ✓ Use `math.e` if you need the constant value
+- ✗ Avoid hardcoded approximations like `2.718`
+
+**Usage:**
+```bash
+python3 examples/euler_number_usage.py
+```
+
+**Topics Covered:**
+- Exponential calculations with proper precision
+- Simulated annealing acceptance probability
+- Comparison of accuracy between methods
+- Best practices for mathematical constants
+
+**Related Tests:**
+- `tests/test_euler_number_usage.py`
+
+---
+
+## 🎯 Purpose
+
+These examples serve as reference implementations for:
+1. **Code Quality** - Demonstrating best practices
+2. **Education** - Teaching proper techniques
+3. **Consistency** - Establishing patterns across the ecosystem
+4. **Documentation** - Providing working code examples
+
+---
+
+## 🔗 Related Resources
+
+- [Wave Toolkit Main README](../README.md)
+- [Communication Patterns](../communication-patterns.md)
+- [AI Agent Rules](../AI_AGENTS.md)
+- [SpiralSafe Ecosystem](https://github.com/toolate28/SpiralSafe)

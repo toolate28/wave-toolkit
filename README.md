@@ -67,6 +67,7 @@ Wave Toolkit is part of a unified framework for human-AI collaboration:
 | **Consolidation** | `Consolidate-Scripts.ps1` | Migrates loose scripts to organized structure |
 | **Logging Module** | `tools/Wave.Logging.psm1` | Centralized logging across the ecosystem |
 | **Project Book** | `project-book.ipynb` | Interactive Jupyter notebook for framework tooling |
+| **Examples** | `examples/` | Code examples and best practices for the ecosystem |
 
 ---
 
@@ -100,8 +101,12 @@ wave-toolkit/
 │   ├── deployment/               # Deploy/CI scripts
 │   └── startup/                  # Startup automation
 │
-├── 📂 tests/                     # Pester tests
-│   └── Wave.Logging.Tests.ps1
+├── 📂 examples/                  # Code examples & best practices (NEW)
+│   └── euler_number_usage.py     # Proper use of Euler's number
+│
+├── 📂 tests/                     # Test files
+│   ├── Wave.Logging.Tests.ps1    # PowerShell tests
+│   └── test_euler_number_usage.py # Python example tests
 │
 ├── 📄 Get-WaveContext.ps1        # Context capture
 ├── 📄 New-ClaudeSystemPrompt.ps1 # Prompt generation
