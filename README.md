@@ -28,6 +28,7 @@ Wave Toolkit provides coherence detection tools and AI collaboration patterns fo
 - **[Orchard View](docs/guides/ORCHARD_VIEW.md)** — Multi-layer visualization (repos, branches, leaves, fireflies, atoms)
 - **[Emergent Isomorphism](docs/guides/EMERGENT_ISOMORPHISM.md)** — Structure that preserves 60%+ emergence
 - **[PR Correlation Analysis](docs/guides/PR_CORRELATION_ANALYSIS.md)** — Patterns, spirals, and constellations since spiralsafe-mono genesis
+- **[CASCADE Operations](docs/guides/CASCADE_OPERATIONS.md)** — Mapping surjections in data flow for precision and integrity
 
 ### 🔧 Special Docs
 
