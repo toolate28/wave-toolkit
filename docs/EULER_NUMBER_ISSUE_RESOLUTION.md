@@ -35,6 +35,16 @@ Instead of simply fixing a single line of code, I've created comprehensive refer
 
 5. **Updated `README.md`** - Added examples section to main documentation
 
+6. **`docs/EULER_PRECISION_IMPACT_ANALYSIS.md`** - Comprehensive ecosystem impact analysis:
+   - Heat map of potential issues across SpiralSafe ecosystem
+   - Link analysis of where precision errors could propagate
+   - Prioritized action items for ecosystem-wide fixes
+
+7. **`tools/scan_euler_precision.py`** - Automated scanner:
+   - Scans entire ecosystem for hardcoded Euler approximations
+   - Supports Python, JavaScript, Java, and other languages
+   - Reports findings with line numbers and context
+
 ### Key Findings
 
 Running the example demonstrates:
@@ -106,6 +116,25 @@ If you encounter similar code in other repositories:
 2. Import the math module: `import math`
 3. Refer to this example for guidance
 4. Run tests to verify accuracy improvements
+
+## Ecosystem Scanning
+
+To find potential precision issues across the SpiralSafe ecosystem:
+
+```bash
+# Scan all ecosystem repositories
+$ python3 tools/scan_euler_precision.py
+
+# Verbose output with file counts
+$ python3 tools/scan_euler_precision.py --verbose
+```
+
+The scanner checks:
+- Python: `pow(2.718, x)`, `2.718 ** x`
+- JavaScript/Java: `Math.pow(2.718, x)`
+- All repositories in the SpiralSafe ecosystem
+
+See [`docs/EULER_PRECISION_IMPACT_ANALYSIS.md`](EULER_PRECISION_IMPACT_ANALYSIS.md) for detailed impact analysis and prioritization of potential issues across the ecosystem.
 
 ## Related Files
 
