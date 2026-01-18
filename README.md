@@ -29,6 +29,7 @@ Wave Toolkit provides coherence detection tools and AI collaboration patterns fo
 - **[Emergent Isomorphism](docs/guides/EMERGENT_ISOMORPHISM.md)** — Structure that preserves 60%+ emergence
 - **[PR Correlation Analysis](docs/guides/PR_CORRELATION_ANALYSIS.md)** — Patterns, spirals, and constellations since spiralsafe-mono genesis
 - **[CASCADE Operations](docs/guides/CASCADE_OPERATIONS.md)** — Mapping surjections in data flow for precision and integrity
+- **[CORPUS_CHECK: Spiral Correlations](docs/CORPUS_CHECK_SPIRAL_CORRELATIONS.md)** — Mapping (0,0), surjections, spirals, vortices, superposition collapse, AGI, iteration, and doubt
 
 ### 🔧 Special Docs
 
