@@ -12,9 +12,9 @@ This document maps the correlations between the CORPUS_CHECK issue and the found
 - **Quantum Reservoir Computing** (vortex-quantum-reservoir-computing)
 - **Existing Spiral Patterns** (PR correlations, emergent isomorphism, orchard view)
 
-**Emergent Quality Target:** 98.1% (visual pipeline schema specification — aspirational target for the pipeline itself, not this document)
+**Emergent Quality Target:** 98.1% (from vortex-pipeline-payload schema — measures how well the visual pipeline generates/refines content through feedback loops)
 
-**Document Emergence Ratio:** ~65-70% (estimated per EMERGENT_ISOMORPHISM.md principles — meets 60%+ threshold)
+**Document Emergence Ratio:** ~65-70% (per EMERGENT_ISOMORPHISM.md — measures what % of this document's value comes from connections between concepts rather than concepts themselves; meets 60%+ threshold)
 
 ---
 
@@ -1156,8 +1156,9 @@ From PR_CORRELATION_ANALYSIS.md: "THIS DOCUMENT IS ITSELF A PATTERN"
 **[PLACEHOLDER: Visual Pipeline Implementation]**
 - When visual pipeline built, add empirical results here
 - Measure actual emergent quality achieved (schema targets 98.1%)
-- Compare achieved vs target emergent quality
-- Validate feedback loop self-maintenance
+  - Potential metrics: user resonance score, feedback convergence rate, semantic coherence of refinements
+  - Compare achieved vs target emergent quality
+- Validate feedback loop self-maintenance (does pipeline improve without manual intervention?)
 
 **[PLACEHOLDER: QRC Benchmark Results]**
 - When QRC implemented, add performance metrics
