@@ -31,6 +31,34 @@ python3 examples/euler_number_usage.py
 - See [`docs/EULER_PRECISION_IMPACT_ANALYSIS.md`](../docs/EULER_PRECISION_IMPACT_ANALYSIS.md) for analysis of where this precision issue could manifest across the SpiralSafe ecosystem
 - Use `tools/scan_euler_precision.py` to scan for hardcoded approximations in your repositories
 
+### import_traces_demo.py
+
+Demonstrates how to safely import trace data from JSON files with proper error handling for missing required fields.
+
+**Key Points:**
+- ✓ Validates required fields: `trace_id`, `state`, `input`, `output`
+- ✓ Provides clear error messages for missing/invalid data
+- ✓ Handles FileNotFoundError, JSONDecodeError, ValueError
+- ✓ Supports both single trace objects and arrays
+
+**Usage:**
+```bash
+python3 examples/import_traces_demo.py
+```
+
+**Topics Covered:**
+- Safe JSON import with validation
+- Error handling for missing fields
+- Defensive programming patterns
+- Clear error reporting
+
+**Related Tests:**
+- `tests/test_import_traces.py` (pytest version)
+- `tests/test_import_traces_simple.py` (standalone version)
+
+**Implementation:**
+- See `project-book.ipynb` for the full `import_traces()` function
+
 ---
 
 ## 🎯 Purpose
