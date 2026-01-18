@@ -7,7 +7,8 @@ from pathlib import Path
 from typing import List, Dict, Any
 
 
-# Import the function implementation
+# Function is implemented locally for standalone testing.
+# The actual implementation is in project-book.ipynb.
 def import_traces(json_file_path: str) -> List[Dict[str, Any]]:
     """
     Import trace data from a JSON file with proper error handling.
