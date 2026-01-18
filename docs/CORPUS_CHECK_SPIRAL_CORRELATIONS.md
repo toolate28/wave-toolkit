@@ -12,7 +12,9 @@ This document maps the correlations between the CORPUS_CHECK issue and the found
 - **Quantum Reservoir Computing** (vortex-quantum-reservoir-computing)
 - **Existing Spiral Patterns** (PR correlations, emergent isomorphism, orchard view)
 
-**Emergent Quality:** 98.1% (per issue specification)
+**Emergent Quality Target:** 98.1% (visual pipeline schema specification — aspirational target for the pipeline itself, not this document)
+
+**Document Emergence Ratio:** ~65-70% (estimated per EMERGENT_ISOMORPHISM.md principles — meets 60%+ threshold)
 
 ---
 
@@ -1106,7 +1108,7 @@ From EMERGENT_ISOMORPHISM.md: "60%+ emergence means: Most value comes from what 
   - AGI threshold conditions (emergent from correlations)
   - Practical applications (derived from patterns)
 
-**Emergence ratio:** ✓ Estimated 65-70% (meets threshold)
+**Document Emergence Ratio:** ✓ Estimated 65-70% (meets 60%+ threshold from EMERGENT_ISOMORPHISM.md)
 
 ### The Meta-Pattern Check
 
@@ -1153,7 +1155,8 @@ From PR_CORRELATION_ANALYSIS.md: "THIS DOCUMENT IS ITSELF A PATTERN"
 
 **[PLACEHOLDER: Visual Pipeline Implementation]**
 - When visual pipeline built, add empirical results here
-- Measure emergent quality (98.1% claimed in schema)
+- Measure actual emergent quality achieved (schema targets 98.1%)
+- Compare achieved vs target emergent quality
 - Validate feedback loop self-maintenance
 
 **[PLACEHOLDER: QRC Benchmark Results]**
@@ -1257,7 +1260,9 @@ Based on spiral patterns, next documents in sequence:
 - ✓ Iteration — Refinement cycles, echo states, PR sequences
 - ✓ Doubt — Productive uncertainty, exploration trigger
 
-**Emergent Quality:** 98.1% (aligns with schema target)
+**Visual Pipeline Target:** 98.1% emergent quality (per vortex-pipeline-payload schema)
+
+**Document Emergence Ratio:** ~65-70% (meets 60%+ threshold)
 
 **Next Action:** Iterate when doubt arises.
 
