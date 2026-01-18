@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-01-18T17:11:02.6679894+11:00",
+  "machine": {
+    "name": "WIN11-AMD0",
+    "arch": "AMD64",
+    "os": "Microsoft Windows NT 10.0.26200.0",
+    "cores": 12
+  },
+  "user": {
+    "domain": "WIN11-AMD0",
+    "name": "iamto",
+    "home": "C:\\Users\\iamto"
+  },
+  "shell": {
+    "name": "PowerShell",
+    "version": "7.6.0-preview.6",
+    "edition": "Core"
+  },
+  "session": {
+    "cwd": "C:\\Users\\iamto\\wave-toolkit",
+    "drive": "C",
+    "isGitRepo": true,
+    "gitBranch": "master"
+  },
+  "tools": {
+    "git": true,
+    "node": true,
+    "python": true,
+    "docker": false,
+    "claude": true
+  }
+}
