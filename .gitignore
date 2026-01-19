@@ -39,3 +39,4 @@ Thumbs.db
 
 # Wave protocol data
 .wave/
+.wave-example/
