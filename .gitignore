@@ -20,6 +20,7 @@ yarn-error.log*
 package-lock.json
 .npm
 .yarn
+coverage/
 
 # IDE
 .vscode/
