@@ -1,4 +1,6 @@
 import { HandshakeMarker } from '../handshake/types';
+import * as fs from 'fs';
+import * as path from 'path';
 
 /**
  * ATOM Trail integration interface
@@ -37,9 +39,6 @@ export class ATOMIntegration {
 
     // For now, we'll create a simple log file
     // In a real implementation, this would integrate with an existing ATOM trail system
-    const fs = require('fs');
-    const path = require('path');
-    
     await fs.promises.mkdir(this.atomDir, { recursive: true });
     
     const atomFile = path.join(this.atomDir, `${marker.sessionId}.atom.jsonl`);
@@ -51,9 +50,6 @@ export class ATOMIntegration {
    * Get ATOM entries for a session
    */
   async getEntries(sessionId: string): Promise<ATOMEntry[]> {
-    const fs = require('fs');
-    const path = require('path');
-    
     const atomFile = path.join(this.atomDir, `${sessionId}.atom.jsonl`);
     
     try {

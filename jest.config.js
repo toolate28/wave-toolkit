@@ -14,11 +14,5 @@ module.exports = {
       lines: 90,
       statements: 90
     }
-  },
-  moduleNameMapper: {
-    '^uuid$': require.resolve('uuid')
-  },
-  transformIgnorePatterns: [
-    'node_modules/(?!(uuid)/)'
-  ]
+  }
 };

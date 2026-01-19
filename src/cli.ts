@@ -2,6 +2,7 @@
 
 import { HandshakeProtocol } from './handshake/protocol';
 import { HandoffState } from './handshake/types';
+import * as fs from 'fs';
 
 /**
  * CLI for H&&S Protocol
@@ -185,7 +186,6 @@ async function handleVisualize(args: string[], protocol: HandshakeProtocol) {
   const diagram = await protocol.visualizeWorkflow(sessionId);
 
   if (outputFile) {
-    const fs = require('fs');
     await fs.promises.writeFile(outputFile, diagram, 'utf-8');
     console.log(`Workflow diagram written to: ${outputFile}`);
   } else {

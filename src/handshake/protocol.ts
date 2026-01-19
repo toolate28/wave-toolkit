@@ -1,7 +1,7 @@
-import { v4 as uuidv4 } from 'uuid';
 import { HandshakeMarker, HandoffState, ValidationResult } from './types';
 import { HandoffStorage } from '../storage/HandoffStorage';
 import { ATOMIntegration } from '../integrations/ATOMIntegration';
+import { randomUUID } from 'crypto';
 
 /**
  * Main HandshakeProtocol class for managing multi-agent handoffs
@@ -29,17 +29,14 @@ export class HandshakeProtocol {
     sessionId: string,
     coherenceScore?: number
   ): Promise<HandshakeMarker> {
-    // Generate UUID using a more Jest-friendly approach
-    const uuid = require('crypto').randomUUID();
-    
     const marker: HandshakeMarker = {
-      id: uuid,
+      id: randomUUID(),
       timestamp: new Date().toISOString(),
       fromAgent,
       toAgent,
       state,
       context,
-      atomTrailId: `ATOM-${require('crypto').randomUUID()}`,
+      atomTrailId: `ATOM-${randomUUID()}`,
       coherenceScore,
       sessionId
     };
