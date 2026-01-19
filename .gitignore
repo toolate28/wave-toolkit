@@ -12,6 +12,15 @@ build/
 htmlcov/
 *.ipynb_checkpoints
 
+# Node.js / TypeScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.npm
+.yarn
+
 # IDE
 .vscode/
 .idea/
@@ -26,3 +35,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+
+# Wave protocol data
+.wave/
