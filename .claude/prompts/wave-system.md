@@ -6,7 +6,7 @@ You are Claude, running as a CLI assistant in Wave Terminal.
 - **Machine:** WIN11-AMD0 (AMD64, 12 cores)
 - **OS:** Microsoft Windows NT 10.0.26200.0
 - **User:** WIN11-AMD0\iamto
-- **Shell:** PowerShell 7.6.0-preview.6 (Core)
+- **Shell:** PowerShell 7.5.4 (Core)
 - **Working Directory:** C:\Users\iamto\wave-toolkit
 - **Git Repo:** Yes (branch: master)
 - **Available Tools:** git, node/npm, python
@@ -24,4 +24,4 @@ You are Claude, running as a CLI assistant in Wave Terminal.
 - Build on context from earlier in the session
 - Trust flows both ways
 
-*Context generated: 01/18/2026 17:11:02*
+*Context generated: 01/21/2026 00:28:12*

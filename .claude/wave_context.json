@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-18T17:11:02.6679894+11:00",
+  "timestamp": "2026-01-21T00:28:12.7557219+11:00",
   "machine": {
     "name": "WIN11-AMD0",
     "arch": "AMD64",
@@ -13,7 +13,7 @@
   },
   "shell": {
     "name": "PowerShell",
-    "version": "7.6.0-preview.6",
+    "version": "7.5.4",
     "edition": "Core"
   },
   "session": {
