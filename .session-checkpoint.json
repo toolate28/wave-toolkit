@@ -1,0 +1,24 @@
+{
+  "WorkingDirectory": "C:\\Users\\iamto\\wave-toolkit",
+  "Note": "1st test checkpoint",
+  "Git": {
+    "RemoteUrl": "https://github.com/toolate28/wave-toolkit",
+    "Ahead": 0,
+    "Branch": "master",
+    "StashCount": 0,
+    "LastCommit": "8a4eec3 .",
+    "ModifiedFiles": [],
+    "StagedFiles": [],
+    "UntrackedFiles": [],
+    "Behind": 0
+  },
+  "Environment": {
+    "User": "iamto",
+    "OS": "Windows",
+    "PowerShellVersion": "7.5.4"
+  },
+  "TimestampHuman": "2026-01-21 00:31:25",
+  "RecoveryHints": [],
+  "Timestamp": "2026-01-21T00:31:25.5928955+11:00",
+  "Version": "1.0"
+}
